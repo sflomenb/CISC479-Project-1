@@ -1,10 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Signika:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body {
   background: orange;
 }
 
 .bg-color {
-  color: #101147;
-  background: #101147;
+  color: #1b1c66;
+  background: #1b1c66;
 }
 
 .height {
@@ -16,6 +19,7 @@ body {
   background: white;
   margin: auto;
   border: 1px solid black;
+  overflow: hidden;
 }
 
 #smallrect { /* rectangle on the right side*/
@@ -24,6 +28,12 @@ body {
   /* margin-left: 600px; */
   /* margin-bottom: 500px; */
   float: right;
+
+  background: #1b1c66; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#1b1c66, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1b1c66, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1b1c66, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1b1c66, white); /* Standard syntax */
 }
 
 #head { /* 406 header, have this for float */
@@ -37,17 +47,17 @@ h1 { /* 406 header */
   margin-bottom: 380px;
   font-size: 150px;
   font-family: "Helvetica", Times, serif;
-  color: #101147;
+  color: #1b1c66;
 }
 
 #bus { /* Body of bus */
-  background: #101147;
+  background: #1b1c66;
   width: 340px;
-  height: 500px;
+  height: 440px;
   background: /* white */
   ;
   float: left;
-  z-index: 1;
+  opacity: .99;
   overflow: hidden;
 }
 
@@ -62,7 +72,6 @@ h1 { /* 406 header */
   height: 13px;
   margin-left: 45px;
   margin-top: 10px;
-  z-index: 10;
 }
 
 #bus-window { /* the window of the bus */
@@ -72,7 +81,6 @@ h1 { /* 406 header */
   height: 150px;
   margin-left: -30px;
   margin-top: 30px;
-  z-index: 5;
 }
 
 #bus-window-angle {
@@ -82,7 +90,6 @@ h1 { /* 406 header */
   height: 150px;
   margin-left: 262px;
   margin-top: -160px;
-  z-index: 10;
   -ms-transform: rotate(-6deg);
   /* IE 9 */
   -webkit-transform: rotate(-6deg);
@@ -96,7 +103,6 @@ h1 { /* 406 header */
   height: 140px;
   margin-left: 220px;
   margin-top: -150px;
-  z-index: 6;
 }
 
 #fix-rect-small { /* one of two rectangles to fix the slant on the right */
@@ -105,14 +111,12 @@ h1 { /* 406 header */
   height: 20px;
   margin-left: 239px;
   margin-top: -160px;
-  z-index: 6;
 }
 
 #light { /* common attributes for the lights */
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  z-index: 10;
 }
 
 .light-left {
@@ -126,26 +130,12 @@ h1 { /* 406 header */
   float: left;
 }
 
-
-.bus-top {
-  background: #101147;
-  border-radius: 50%;
-  width: 340px;
-  height: 50px;
-  z-index: 1;
-  margin-top: 560px;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
 #bus-bottom {
   margin-top: 50px;
   width: 340px;
   height: 107px;
   background: white;
   float: left;
-  z-index: 10;
 }
 
 .bus-wheel {
@@ -153,7 +143,6 @@ h1 { /* 406 header */
   padding: 5px;
   width: 40px;
   height: 60px;
-  z-index: 10;
   -ms-transform: rotate(-6deg);
   IE 9 -webkit-transform: rotate(-6deg);
   Chrome,
@@ -162,22 +151,124 @@ h1 { /* 406 header */
 }
 
 .bus-left-wheel {
-  background: #101147;
+  background: #1b1c66;
   margin-left: -25px;
   margin-top: -25px;
 }
 
 .bus-right-wheel {
-  background: #101147;
+  background: #1b1c66;
   margin-left: 242px;
   margin-top: -70px;
  /* float: left; */
 }
 
 .website {
-  color: #101147;
+  color: #1b1c66;
   margin-left: -170px;
   margin-top: 35px;
   font-style: italic;
   font-style: bold;
 }
+
+
+.bus-top {
+  background: #1b1c66;
+  border-radius: 50%;
+  width: 354px;
+  height: 50px;
+  margin-top: 560px;
+  top: 0;
+  left: 0;
+  margin-left: -14px
+
+}
+
+.bottom {
+  background: #1b1c66;
+  width: 700px;
+  height: 1070px;
+  margin-top: 320px;
+}
+
+.bottom-circle {
+  background: white;
+  border-radius: 50%;
+  width: 1000px;
+  height: 460px;
+  margin-top: -1400px;
+  margin-left: -340px;
+}
+
+#destinations {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*div > div#destinations > p.bold:first-child){
+  margin-top: -50px;
+}*/
+
+div > div#destinations > p.bold:not(:first-child){
+  margin-top: -37.5px;
+  /*color: dodgerblue;*/
+}
+
+div > div#destinations > p.bold:first-child {
+  /*color: green;*/
+}
+
+.vertical-text {
+  transform: rotate(270deg);
+  color: white;
+}
+
+#service {
+  color: white;
+  float: left;
+  margin-left: -30px;
+  margin-top: 42px;
+  margin-bottom: 500px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.small {
+  margin-bottom: 32px;
+  margin-top: -37px;
+  font-size:20px;
+  font-style: italic;
+  /*color: red;*/
+}
+
+div > div#destinations > p.small + p.small{
+  margin-top: -35px !important;
+  /*color: orange;*/
+}
+
+.bus-text {
+  margin-top: 813px;
+  margin-left: -661px;
+  color: white;
+  margin-right: -643px;
+  font-size: 56px;
+  font-family: 'Signika', sans-serif;
+
+}
+
+.bus-span {
+  color: #1b1c66;
+}
+
+/*
+.arrow {
+  display: inline-block;
+  height: 1.1em;
+  padding-right: 5px;
+  position: relative;
+  top: -2px;
+}
+*/
