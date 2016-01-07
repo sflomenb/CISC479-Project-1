@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed:700);
 
 body {
   background: orange;
@@ -11,7 +14,7 @@ body {
 }
 
 .height {
-  height: 2000px;
+  height: 1875px;
 }
 
 #mainrect { /* entire rectangle */
@@ -25,10 +28,7 @@ body {
 #smallrect { /* rectangle on the right side*/
   width: 130px;
   border: px solid black;
-  /* margin-left: 600px; */
-  /* margin-bottom: 500px; */
   float: right;
-
   background: #1b1c66; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#1b1c66, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#1b1c66, white); /* For Opera 11.1 to 12.0 */
@@ -42,36 +42,25 @@ body {
 }
 
 h1 { /* 406 header */
-  padding-right: 20px;
+  padding-right: 13px;
   margin-top: 30px;
   margin-bottom: 380px;
   font-size: 150px;
-  font-family: "Helvetica", Times, serif;
+  font-family: 'Cabin Condensed', sans-serif;
   color: #1b1c66;
 }
 
 #bus { /* Body of bus */
   background: #1b1c66;
-  width: 340px;
-  height: 440px;
-  background: /* white */
-  ;
-  float: left;
-  opacity: .99;
-  overflow: hidden;
+      width: 325px;
+      height: 373px;
+      float: left;
+      opacity: 0.99;
+      overflow: hidden;
 }
 
 .bus-holes { /* sets the color of all the "holes" in the bus, like the window, headlights, etc */
-  background: white;
-}
-
-#bus-destination { /* The rounded rectangle at the top of the bus */
-  border-radius: 25px;
-  padding: 5px;
-  width: 200px;
-  height: 13px;
-  margin-left: 45px;
-  margin-top: 10px;
+background: white;
 }
 
 #bus-window { /* the window of the bus */
@@ -80,7 +69,7 @@ h1 { /* 406 header */
   width: 300px;
   height: 150px;
   margin-left: -30px;
-  margin-top: 30px;
+  margin-top: 17px;
 }
 
 #bus-window-angle {
@@ -120,7 +109,7 @@ h1 { /* 406 header */
 }
 
 .light-left {
-  margin-top: 200px;
+  margin-top: 177px;
   margin-left: -30px;
 }
 
@@ -131,9 +120,9 @@ h1 { /* 406 header */
 }
 
 #bus-bottom {
-  margin-top: 50px;
+  margin-top: 53px;
   width: 340px;
-  height: 107px;
+  height: 47px;
   background: white;
   float: left;
 }
@@ -160,44 +149,56 @@ h1 { /* 406 header */
   background: #1b1c66;
   margin-left: 242px;
   margin-top: -70px;
- /* float: left; */
+  /* float: left; */
 }
 
 .website {
   color: #1b1c66;
-  margin-left: -170px;
+  margin-left: -199px;
   margin-top: 35px;
   font-style: italic;
-  font-style: bold;
+  font-size: 1.4em;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: -1px;
 }
 
 
 .bus-top {
   background: #1b1c66;
   border-radius: 50%;
-  width: 354px;
-  height: 50px;
-  margin-top: 560px;
+  width: 359px;
+  height: 121px;
+  margin-top: 537px;
   top: 0;
   left: 0;
-  margin-left: -14px
+  margin-left: -34px;
+}
 
+#bus-destination { /* The rounded rectangle at the top of the bus */
+  border-radius: 25px;
+  padding: 5px;
+  width: 200px;
+  height: 13px;
+  margin-left: 31px;
+  margin-top: -93px;
 }
 
 .bottom {
   background: #1b1c66;
   width: 700px;
-  height: 1070px;
-  margin-top: 320px;
+  height: 1084px;
+  margin-top: 330px;
 }
 
 .bottom-circle {
   background: white;
   border-radius: 50%;
   width: 1000px;
-  height: 460px;
-  margin-top: -1400px;
+  height: 380px;
+  margin-top: -1381px;
   margin-left: -340px;
+  margin-bottom: 60px;
 }
 
 #destinations {
@@ -206,11 +207,11 @@ h1 { /* 406 header */
 }
 
 /*div > div#destinations > p.bold:first-child){
-  margin-top: -50px;
+margin-top: -50px;
 }*/
 
 div > div#destinations > p.bold:not(:first-child){
-  margin-top: -37.5px;
+  margin-top: -33.5px;
   /*color: dodgerblue;*/
 }
 
@@ -232,43 +233,82 @@ div > div#destinations > p.bold:first-child {
 }
 
 .bold {
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: 2px;
 }
 
 .small {
-  margin-bottom: 32px;
-  margin-top: -37px;
+  margin-bottom: 28px;
+  margin-top: -32px;
   font-size:20px;
   font-style: italic;
-  /*color: red;*/
+  font-family: 'Noto Sans', sans-serif;  /*color: red;*/
+  font-weight: 300;
 }
 
 div > div#destinations > p.small + p.small{
-  margin-top: -35px !important;
+  margin-top: -32px !important;
   /*color: orange;*/
 }
 
-.bus-text {
-  margin-top: 813px;
-  margin-left: -661px;
+.bus-text, .issued-text {
   color: white;
-  margin-right: -643px;
-  font-size: 56px;
+  font-size: 42px;
   font-family: 'Signika', sans-serif;
 
 }
 
+.bus-text {
+  margin-top: 699px;
+  margin-left: -661px;
+  margin-right: -662px;
+  letter-spacing: 4px;
+}
+
+.issued-text {
+  margin-top: -684.5px;
+  margin-left: -205px;
+  margin-right: -205.7px;
+  letter-spacing: 7px;
+}
+
 .bus-span {
   color: #1b1c66;
+  letter-spacing: 1px;
+}
+
+#NJ {
+
+}
+
+#N {
+
+}
+
+#Nround {
+  color: white;
+  border-radius: 25px;
+  padding: 5px;
+  width: 40px;
+  height: 60px;
+  /*-ms-transform: rotate(-6deg);
+  IE 9 -webkit-transform: rotate(-6deg);
+  Chrome,
+  Safari,
+  Opera transform: rotate(-6deg);*/
+}
+
+#Nsquare {
+
 }
 
 /*
 .arrow {
-  display: inline-block;
-  height: 1.1em;
-  padding-right: 5px;
-  position: relative;
-  top: -2px;
+display: inline-block;
+height: 1.1em;
+padding-right: 5px;
+position: relative;
+top: -2px;
 }
 */
