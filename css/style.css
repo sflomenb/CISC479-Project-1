@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
   background: orange;
@@ -52,11 +53,11 @@ h1 { /* 406 header */
 
 #bus { /* Body of bus */
   background: #1b1c66;
-      width: 325px;
-      height: 373px;
-      float: left;
-      opacity: 0.99;
-      overflow: hidden;
+  width: 325px;
+  height: 373px;
+  float: left;
+  /*opacity: 0.99;*/
+  overflow: hidden;
 }
 
 .bus-holes { /* sets the color of all the "holes" in the bus, like the window, headlights, etc */
@@ -187,17 +188,17 @@ background: white;
 .bottom {
   background: #1b1c66;
   width: 700px;
-  height: 1084px;
-  margin-top: 330px;
+  height: 994px;
+  margin-top: 300px;
 }
 
 .bottom-circle {
   background: white;
   border-radius: 50%;
-  width: 1000px;
-  height: 380px;
-  margin-top: -1381px;
-  margin-left: -340px;
+  width: 945px;
+  height: 410px;
+  margin-top: -1285px;
+  margin-left: -335px;
   margin-bottom: 60px;
 }
 
@@ -216,7 +217,7 @@ div > div#destinations > p.bold:not(:first-child){
 }
 
 div > div#destinations > p.bold:first-child {
-  /*color: green;*/
+  margin-top: -47px;
 }
 
 .vertical-text {
@@ -230,6 +231,7 @@ div > div#destinations > p.bold:first-child {
   margin-left: -30px;
   margin-top: 42px;
   margin-bottom: 500px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bold {
@@ -279,28 +281,122 @@ div > div#destinations > p.small + p.small{
 }
 
 #NJ {
-
+  padding-left: 31px
 }
 
 #N {
 
 }
 
-#Nround {
-  color: white;
-  border-radius: 25px;
+div#N > *, div#J > * {
+  background: white;
+}
+
+.Nleft {
   padding: 5px;
-  width: 40px;
-  height: 60px;
-  /*-ms-transform: rotate(-6deg);
-  IE 9 -webkit-transform: rotate(-6deg);
-  Chrome,
-  Safari,
-  Opera transform: rotate(-6deg);*/
+  width: 3px;
+  margin-left: 65px;
+}
+
+#Nround {
+  margin-top: -57px;
+  border-radius: 25px;
+  height: 56px;
 }
 
 #Nsquare {
+  margin-top: -60px;
+  height: 50px;
+}
 
+#Ndiag {
+  margin-top: -74px;
+  border-radius: 25px;
+  padding: 5px;
+  width: 6px;
+  height: 60px;
+  background: dodgerblue;
+  margin-left: 84.3px;
+  -ms-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  transform: rotate(-45deg);
+}
+
+.Nright {
+  padding: 5px;
+  width: 3px;
+  /*height: 38px;*/
+  margin-left: 106.7px;
+}
+
+#Nroundrev, #Nroundrev2 {
+  height: 35px;
+  /* margin-left: 111px; */
+  border-radius: 25px;
+  margin-top: -33px;
+}
+
+#Nsquarerev, #Nsquarerev2 {
+  height: 30px;
+  margin-top: -56px;
+  background: dodgerblue;
+}
+
+.Jright {
+  padding: 5px;
+  width: 1px;
+  /* height: 38px; */
+  margin-left: 123px;
+}
+
+#J {
+
+}
+
+#Jround, #Jround2 {
+  height: 43.6px;
+  border-radius: 25px;
+  /* margin-left: 111px; */
+  margin-top: -47px;
+}
+
+#Jround2, #Nsquarerev2, #Nroundrev2 {
+  background: #1b1c66 !important;
+}
+
+#Jsquare {
+  height: 38px;
+    margin-top: -52px;
+    background: dodgerblue;
+}
+
+#Jbottom {
+  height: 21px;
+  width: 49px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 50px;
+  margin-left: 85px;
+  margin-top: -14px;
+  border-bottom-left-radius: 50px;
+
+}
+#triangle {
+  width: 0;
+  height: 0px;
+  border-top: 5px solid #1b1c66;
+  border-bottom: 12px solid #FFFFFF;
+  border-right: 12.4px solid #1b1c66;
+  margin-left: 85px;
+  margin-top: -38px;
+}
+
+#circle {
+  border-radius: 50%;
+  width: 34px;
+  height: 51px;
+  margin-left: 93.7px;
+  margin-top: -41.5px;
+  background: #1b1c66 !important;
 }
 
 /*
