@@ -207,10 +207,6 @@ background: white;
   font-family: 'Roboto', sans-serif;
 }
 
-/*div > div#destinations > p.bold:first-child){
-margin-top: -50px;
-}*/
-
 div > div#destinations > p.bold:not(:first-child){
   margin-top: -28.5px;
 }
@@ -239,23 +235,22 @@ div > div#destinations > p.bold:first-child {
 }
 
 .bold {
-  font-size: 24px;
-  letter-spacing: 1.7px;
+  font-size: 22.9px;
+  letter-spacing: 3.5px;
 }
 
 .small {
-  margin-bottom: 27px;
-margin-top: -31px;
-font-size: 20px;
-font-style: italic;
-font-family: 'Open Sans', sans-serif;
-font-weight: 200;
-letter-spacing: 1px;
+  margin-bottom: 25.7px;
+  margin-top: -31.3px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 div > div#destinations > p.small + p.small{
   margin-top: -32px !important;
-  /*color: orange;*/
 }
 
 .bus-text, .issued-text {
@@ -334,7 +329,6 @@ div#N > *, div#J > * {
 
 #Nroundrev, #Nroundrev2 {
   height: 35px;
-  /* margin-left: 111px; */
   margin-top: -33px;
 }
 
@@ -347,7 +341,6 @@ div#N > *, div#J > * {
 .Jright {
   padding: 5px;
   width: 1px;
-  /* height: 38px; */
   margin-left: 123px;
 }
 
@@ -444,13 +437,11 @@ div#N > *, div#J > * {
 .Nright {
   padding: 5px;
   width: 3px;
-  /*height: 38px;*/
   margin-left: 106.7px;
 }
 
 #Nroundrev2, #Nroundrev22 {
   height: 35px;
-  /* margin-left: 111px; */
   margin-top: -33px;
 }
 
@@ -584,7 +575,6 @@ div#N > *, div#J > * {
   margin-left: 346.5px;
   margin-top: -178.2px;
   background: white !important;
-
 }
 
 
@@ -642,22 +632,22 @@ div#N > *, div#J > * {
 
 
 #arrowbullet1 {
-    margin-top: -95px;
+    margin-top: -71px;
 }
 
-#arrowbullet2 {margin-top: 48px;}
+#arrowbullet2 {margin-top: 44px;}
 
-#arrowbullet3 {margin-top: 95px;}
+#arrowbullet3 {margin-top: 87px;}
 
-#arrowbullet4 {margin-top: 164px;}
+#arrowbullet4 {margin-top: 151px;}
 
-#arrowbullet5 {margin-top: 209px;}
+#arrowbullet5 {margin-top: 193px;}
 
-#arrowbullet6 {margin-top: 255px;}
+#arrowbullet6 {margin-top: 236px;}
 
-#arrowbullet7 {margin-top: 278px;}
+#arrowbullet7 {margin-top: 258.5px;}
 
-#arrowbullet8 {margin-top: 303px;}
+#arrowbullet8 {margin-top: 279.3px;}
 
 #arrowbullet1, #arrowbullet2, #arrowbullet3,
 #arrowbullet4, #arrowbullet5, #arrowbullet6,
