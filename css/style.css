@@ -4,6 +4,51 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic);
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 body {
   background: orange;
 }
@@ -173,7 +218,7 @@ background: white;
 .bus-top {
   width: 359px;
   height: 121px;
-  margin-top: 537px;
+  margin-top: 500px;
   top: 0;
   left: 0;
   margin-left: -34px;
@@ -190,7 +235,7 @@ background: white;
 .bottom {
   width: 700px;
   height: 994px;
-  margin-top: 300px;
+  margin-top: 330px;
 }
 
 .bottom-circle {
@@ -198,7 +243,7 @@ background: white;
   width: 945px;
   height: 410px;
   margin-top: -1285px;
-  margin-left: -335px;
+  margin-left: -329px;
   margin-bottom: 60px;
 }
 
@@ -208,7 +253,7 @@ background: white;
 }
 
 div > div#destinations > p.bold:not(:first-child){
-  margin-top: -28.5px;
+  margin-top: -2.5px;
 }
 
 div > div#destinations > p.bold:first-child {
@@ -240,8 +285,8 @@ div > div#destinations > p.bold:first-child {
 }
 
 .small {
-  margin-bottom: 25.7px;
-  margin-top: -31.3px;
+  margin-bottom: 2.6px;
+  margin-top: -1.3px;
   font-size: 20px;
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
@@ -250,7 +295,7 @@ div > div#destinations > p.bold:first-child {
 }
 
 div > div#destinations > p.small + p.small{
-  margin-top: -32px !important;
+  margin-top: -3px !important;
 }
 
 .bus-text, .issued-text {
@@ -268,7 +313,7 @@ div > div#destinations > p.small + p.small{
 }
 
 .issued-text {
-  margin-top: -684.5px;
+  margin-top: -644.5px;
   margin-left: -205px;
   margin-right: -205.7px;
   letter-spacing: 7px;
@@ -503,7 +548,7 @@ div#N > *, div#J > * {
 
 #transit {
   color: #1B1C66;
-  margin-top: 1494px;
+  margin-top: 1559px;
   margin-left: -21px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -513,13 +558,15 @@ div#N > *, div#J > * {
 
 #subtitle {
   color: #1B1C66;
-  margin-top: 1507px;
-  margin-left: 15px;
+  margin-top: 1573px;
+  margin-left: 19px;
   font-family: 'Roboto', sans-serif;
   font-size: 0.9em;
 }
 
-#logo {}
+#logo {
+    margin-top: 70px;
+}
 
 .slant {
   height: 34px;
@@ -632,22 +679,22 @@ div#N > *, div#J > * {
 
 
 #arrowbullet1 {
-    margin-top: -71px;
+    margin-top: -38px;
 }
 
-#arrowbullet2 {margin-top: 44px;}
+#arrowbullet2 {margin-top: 21px;}
 
-#arrowbullet3 {margin-top: 87px;}
+#arrowbullet3 {margin-top: 62px;}
 
-#arrowbullet4 {margin-top: 151px;}
+#arrowbullet4 {margin-top: 124px;}
 
-#arrowbullet5 {margin-top: 193px;}
+#arrowbullet5 {margin-top: 165px;}
 
-#arrowbullet6 {margin-top: 236px;}
+#arrowbullet6 {margin-top: 207px;}
 
-#arrowbullet7 {margin-top: 258.5px;}
+#arrowbullet7 {margin-top: 228.1px;}
 
-#arrowbullet8 {margin-top: 279.3px;}
+#arrowbullet8 {margin-top: 247.3px;}
 
 #arrowbullet1, #arrowbullet2, #arrowbullet3,
 #arrowbullet4, #arrowbullet5, #arrowbullet6,
